@@ -21,3 +21,8 @@ scikit-learn is only used to make the data and split it. The network itself is p
 - `requirements.txt`: the Python packages the code needs.
 - `results.json`: created when you run the script. It holds the numbers it printed.
 
+## What you need
+- Python 3.9 or newer
+- About two minutes
+- New to Python or the terminal? Follow the [Getting Started guide](../GETTING_STARTED.md) first. It walks you through every step.
+
