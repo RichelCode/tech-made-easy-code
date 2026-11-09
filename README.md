@@ -41,3 +41,9 @@ python forecast.py               # each folder's README names its script
 
 Never used a terminal or a virtual environment before? The **[Getting Started guide](GETTING_STARTED.md)** explains every step, with fixes for the most common errors.
 
+## How to get the most out of it
+
+1. **Read the story first.** The code makes much more sense once you know the idea behind it.
+2. **Run the code without changing anything.** Check that your output matches the README.
+3. **Then break it on purpose.** Change one number, run it again and see what moves. That's how the ideas really stick.
+
