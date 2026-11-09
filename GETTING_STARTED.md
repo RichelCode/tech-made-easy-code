@@ -60,3 +60,11 @@ python -m venv .venv
 
 When it's on, you'll see `(.venv)` at the start of your terminal line.
 
+## 6. Install the packages
+
+```bash
+pip install -r requirements.txt
+```
+
+This reads the project's shopping list (`requirements.txt`) and installs everything on it. It can take a minute.
+
