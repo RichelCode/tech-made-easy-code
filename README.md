@@ -51,3 +51,12 @@ Never used a terminal or a virtual environment before? The **[Getting Started gu
 
 If something doesn't run, or you get different numbers, [open an issue](https://github.com/RichelCode/tech-made-easy-code/issues) or leave a comment on the story. Tell me which project, what you ran and the error you saw.
 
+## License
+
+[MIT](LICENSE). You're free to use, change and share this code, in your own projects too.
+
+---
+
+Follow me on [Medium](https://medium.com/@richelattafuah) for a new story every Tuesday.
+
+Richel makes tech easy 💕
