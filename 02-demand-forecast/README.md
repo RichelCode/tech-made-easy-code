@@ -33,3 +33,25 @@ pip install -r requirements.txt
 python forecast.py
 ```
 
+## What you should see
+```
+Train: 01 Nov 2024 to 05 Sep 2026 (674 days)
+Test:  06 Sep 2026 to 31 Oct 2026 (56 days)
+
+Mean absolute error on the 56 test days (cups off, on average):
+  Naive (yesterday)                        9.2
+  Seasonal naive (same day last week)      8.2
+  Model with features                      6.4
+
+Leaky rolling mean (includes today):   5.3   <- looks amazing, can't exist in real life
+Safe rolling mean (past days only):    6.4   <- the honest score
+```
+After that it prints a forecast for each of the next 14 days (2,110 cups in total). Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's chart is drawn from.
+
+**A note on the random seed:** the data uses seed 7, the first one I tried. I also ran seeds 0 to 11. The order never changed: the model always beat both baselines (its error ranged from about 4.7 to 6.7 cups), and the leaky feature always looked better than the honest one. Seed 7 actually gives the model one of its smaller wins.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
