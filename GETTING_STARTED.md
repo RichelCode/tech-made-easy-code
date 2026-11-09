@@ -76,3 +76,11 @@ python forecast.py
 
 Each folder's README names its script. Compare what prints with the **What you should see** section of that README. If they match, it worked! 🎉
 
+## 8. When you're done
+
+```bash
+deactivate
+```
+
+Next time, you only need to `cd` into the folder and run the `activate` line from step 5. No need to reinstall.
+
