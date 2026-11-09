@@ -32,3 +32,13 @@ Pick one:
 - **Download ZIP (easiest):** on the [repo page](https://github.com/RichelCode/tech-made-easy-code), click the green **Code** button, then **Download ZIP**. Unzip it somewhere easy to find, like your Desktop.
 - **Git:** run `git clone https://github.com/RichelCode/tech-made-easy-code.git`
 
+## 4. Move into a project folder
+
+Use `cd` (change directory) to step into the folder. For example:
+
+```bash
+cd Desktop/tech-made-easy-code-main/01-time-series-forecasting
+```
+
+**Tip:** type `cd ` (with a space), then drag the folder from Finder or File Explorer into the terminal window. It fills in the path for you.
+
