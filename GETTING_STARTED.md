@@ -84,3 +84,15 @@ deactivate
 
 Next time, you only need to `cd` into the folder and run the `activate` line from step 5. No need to reinstall.
 
+## Common problems and fixes
+
+- **`python3: command not found` (Mac)** or **`python is not recognized` (Windows):** Python isn't installed, or Windows can't find it. Reinstall it and tick "Add python.exe to PATH". On Windows, `py` often works in place of `python`.
+- **`ModuleNotFoundError: No module named ...`:** your virtual environment isn't on. Run the `activate` line from step 5, then step 6 again.
+- **`pip: command not found`:** use `python3 -m pip install -r requirements.txt` instead (Windows: `python -m pip ...`).
+- **Windows says running scripts is disabled:** run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once in PowerShell, answer **Y**, then try `activate` again.
+- **`No such file or directory: requirements.txt`:** you're in the wrong folder. Run `ls` (Windows: `dir`) and check you can see `requirements.txt` in the list.
+- **XGBoost project on a Mac fails with `libomp`:** install it with `brew install libomp`, then run the script again.
+
+Still stuck? [Open an issue](https://github.com/RichelCode/tech-made-easy-code/issues) and paste the error. I'm happy to help.
+
+⬅️ [Back to all projects](README.md)
