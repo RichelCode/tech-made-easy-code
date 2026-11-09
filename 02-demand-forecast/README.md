@@ -24,3 +24,12 @@ The script builds two years of pretend daily coffee sales for a small shop: a we
 - About two minutes
 - New to Python or the terminal? Follow the [Getting Started guide](../GETTING_STARTED.md) first. It walks you through every step.
 
+## How to run it
+Open a terminal inside this folder, then run these four lines one at a time:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate        # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python forecast.py
+```
+
