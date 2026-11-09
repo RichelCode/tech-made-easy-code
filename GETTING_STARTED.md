@@ -17,3 +17,11 @@ python3 --version        # Windows: python --version
 
 You should see something like `Python 3.12.4`.
 
+## 2. Open a terminal
+
+A terminal is a window where you type commands instead of clicking.
+
+- **Mac:** press `Cmd + Space`, type **Terminal** and press Enter.
+- **Windows:** press the Windows key, type **PowerShell** and press Enter.
+- **VS Code:** open the menu **Terminal > New Terminal**. This works on both.
+
