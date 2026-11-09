@@ -25,3 +25,10 @@ A terminal is a window where you type commands instead of clicking.
 - **Windows:** press the Windows key, type **PowerShell** and press Enter.
 - **VS Code:** open the menu **Terminal > New Terminal**. This works on both.
 
+## 3. Get the code
+
+Pick one:
+
+- **Download ZIP (easiest):** on the [repo page](https://github.com/RichelCode/tech-made-easy-code), click the green **Code** button, then **Download ZIP**. Unzip it somewhere easy to find, like your Desktop.
+- **Git:** run `git clone https://github.com/RichelCode/tech-made-easy-code.git`
+
