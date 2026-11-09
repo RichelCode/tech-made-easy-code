@@ -11,3 +11,8 @@ The script builds a 2-layer neural network with nothing but NumPy: 2 inputs, 8 h
 
 scikit-learn is only used to make the data and split it. The network itself is pure NumPy.
 
+## What you'll learn
+- **A network learns in one loop:** forward pass, measure the loss, pass the blame backwards, nudge the weights, repeat.
+- **Backpropagation is just shared blame.** Start at the error and work backwards, so every weight knows its share.
+- **Watch your learning rate.** Too low crawls, too high bounces. A loss that zigzags usually means "make the steps smaller".
+
