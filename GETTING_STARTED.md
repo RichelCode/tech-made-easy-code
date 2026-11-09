@@ -42,3 +42,21 @@ cd Desktop/tech-made-easy-code-main/01-time-series-forecasting
 
 **Tip:** type `cd ` (with a space), then drag the folder from Finder or File Explorer into the terminal window. It fills in the path for you.
 
+## 5. Make a virtual environment
+
+A virtual environment is a private sandbox for this project's packages, so they don't clash with anything else on your computer.
+
+**Mac:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows:**
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+When it's on, you'll see `(.venv)` at the start of your terminal line.
+
