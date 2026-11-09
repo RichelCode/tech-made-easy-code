@@ -33,3 +33,33 @@ pip install -r requirements.txt
 python neural_net.py
 ```
 
+## What you should see
+```
+Training points: 750   Test points: 250
+
+Hand-made neuron: sum = 0.90, after sigmoid = 0.71
+Trained neuron:   weights = 0.01, -0.01   bias = 0.00
+Its guess for every test point is close to 50/50: 0.50 to 0.50
+
+Test accuracy (share of unseen points classified correctly):
+  One neuron                     48.8%
+  Network, 8 hidden neurons      99.2%
+
+Network error at step 1: 0.71   at the end (step 452): 0.02
+
+Hidden neurons -> test accuracy (seed 0), and the range over seeds 0 to 4:
+   1  48.0%   (seeds 0 to 4: 48.0% to 64.8%)
+   2  62.4%   (seeds 0 to 4: 48.0% to 80.4%)
+   4  97.2%   (seeds 0 to 4: 71.6% to 98.0%)
+   8  99.2%   (seeds 0 to 4: 98.0% to 99.2%)
+  16  98.8%   (seeds 0 to 4: 98.4% to 98.8%)
+```
+Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's chart is drawn from.
+
+**A note on seeds:** a neural network starts from random weights, and `random_state` picks them. The story's main numbers use seed 0. The script also tries seeds 0 to 4 for each hidden layer size and prints the range, so you can see that small networks (4 neurons or fewer) sometimes get stuck, while 8 or more score at least 98.0% with every seed tried.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
