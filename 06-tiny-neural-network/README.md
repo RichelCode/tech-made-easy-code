@@ -35,3 +35,34 @@ pip install -r requirements.txt
 python tiny_network.py
 ```
 
+## What you should see
+```
+Train: 800 points   Test: 200 points (held out)
+
+Learning rate 1.0: loss over epochs
+  epoch    0   loss 0.722
+  epoch  100   loss 0.244
+  epoch  250   loss 0.145
+  epoch  500   loss 0.089
+  epoch 1000   loss 0.071
+  epoch 1500   loss 0.066
+  epoch 2000   loss 0.064
+
+Train accuracy: 97.8%
+Test accuracy:  99.0%   <- points it never saw
+Loss of a coin-flip guess: 0.693
+
+Same network, same 2,000 epochs, three learning rates:
+  lr  0.01: final loss 0.290   test accuracy 86.5%   (last 500 epochs: loss 0.29 to 0.29)
+  lr   1.0: final loss 0.064   test accuracy 99.0%   (last 500 epochs: loss 0.06 to 0.07)
+  lr  50.0: final loss 2.917   test accuracy 87.0%   (last 500 epochs: loss 1.17 to 2.92)
+```
+Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's charts are drawn from.
+
+**A note on randomness:** the starting weights come from a random seed (0 here). With seeds 0 to 9, the final loss landed between 0.060 and 0.074 and test accuracy between 98% and 99%. On this data, learning rates from about 0.5 to 10 all train smoothly; at 20 and above the loss starts to bounce.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
