@@ -19,3 +19,8 @@ The script builds two years of pretend daily coffee sales for a small shop: a we
 - `requirements.txt`: the Python packages the code needs.
 - `results.json`: created when you run the script. It holds the numbers it printed.
 
+## What you need
+- Python 3.9 or newer
+- About two minutes
+- New to Python or the terminal? Follow the [Getting Started guide](../GETTING_STARTED.md) first. It walks you through every step.
+
