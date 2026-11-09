@@ -35,3 +35,28 @@ python boosting.py
 
 **Mac users:** if `import xgboost` fails with a message about `libomp`, install it with `brew install libomp` and try again.
 
+## What you should see
+```
+Test accuracy on 114 unseen tumours (split seed 42):
+  Single decision tree         94.7%  (6 wrong)
+  Random forest (300 trees)    94.7%  (6 wrong)
+  XGBoost                      94.7%  (6 wrong)
+
+Average test accuracy over 10 different splits (seeds 0 to 9):
+  Single decision tree         93.7%  (range 90.4% to 96.5%)
+  Random forest (300 trees)    96.8%  (range 93.9% to 98.2%)
+  XGBoost                      96.8%  (range 94.7% to 98.2%)
+
+XGBoost built 257 trees before early stopping kicked in.
+Best validation error at tree 207: 0.138
+With learning_rate=0.3: best at tree 33, validation error 0.143, test accuracy 93.9%
+```
+Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's charts are drawn from.
+
+**A note on the scores:** on any single split, the three models can land very close together (on seed 42 they tie). That's why the script repeats everything on 10 splits. Averaged, both tree ensembles beat a single tree, and on this small, clean dataset XGBoost and the random forest tie.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
