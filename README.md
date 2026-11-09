@@ -22,3 +22,22 @@ This repo holds the code from those stories, so you can run it yourself, poke at
 
 Start with project 1 if you're new. Each story builds on the ones before it.
 
+## How to use this repo
+
+**1. Get the code.** Pick one:
+- **No Git?** Click the green **Code** button at the top of this page, then **Download ZIP**, and unzip it.
+- **Have Git?** Run `git clone https://github.com/RichelCode/tech-made-easy-code.git`
+
+**2. Open a project folder.** For example, `01-time-series-forecasting`.
+
+**3. Follow that folder's README.** It's always the same four lines:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate        # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python forecast.py               # each folder's README names its script
+```
+
+Never used a terminal or a virtual environment before? The **[Getting Started guide](GETTING_STARTED.md)** explains every step, with fixes for the most common errors.
+
