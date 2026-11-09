@@ -14,3 +14,8 @@ The script uses the breast cancer dataset that ships inside scikit-learn (569 tu
 - **Learning rate and early stopping work as a pair.** Take small steps, watch a validation set, and stop when it stops improving.
 - **XGBoost is strong, not magic.** In our test it tied a random forest. Compare it fairly, on more than one split, before you crown a winner.
 
+## What's in this folder
+- `boosting.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
