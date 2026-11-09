@@ -14,3 +14,8 @@ The script builds 300 pretend shop customers, each described by two numbers: how
 - **Always scale first.** K-Means runs on distance, so a column with big numbers will drown out the rest.
 - **Don't guess k.** Use the elbow and the silhouette score, then describe each group in plain words to check it makes sense.
 
+## What's in this folder
+- `kmeans.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
