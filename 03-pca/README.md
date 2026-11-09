@@ -14,3 +14,8 @@ The script loads the wine dataset that ships with scikit-learn: 178 wines, 13 ch
 - **Always scale first.** Otherwise the column with the biggest numbers wins, just because of its units.
 - **Check what you kept with a real test.** Here, 2 components held 55.4% of the variance but still reached 95.5% accuracy, against 98.3% with all 13 columns.
 
+## What's in this folder
+- `pca_explained.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
