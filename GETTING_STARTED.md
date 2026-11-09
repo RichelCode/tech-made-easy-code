@@ -68,3 +68,11 @@ pip install -r requirements.txt
 
 This reads the project's shopping list (`requirements.txt`) and installs everything on it. It can take a minute.
 
+## 7. Run it
+
+```bash
+python forecast.py
+```
+
+Each folder's README names its script. Compare what prints with the **What you should see** section of that README. If they match, it worked! 🎉
+
