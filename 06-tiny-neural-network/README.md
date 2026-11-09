@@ -16,3 +16,8 @@ scikit-learn is only used to make the data and split it. The network itself is p
 - **Backpropagation is just shared blame.** Start at the error and work backwards, so every weight knows its share.
 - **Watch your learning rate.** Too low crawls, too high bounces. A loss that zigzags usually means "make the steps smaller".
 
+## What's in this folder
+- `tiny_network.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
