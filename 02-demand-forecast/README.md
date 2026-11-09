@@ -14,3 +14,8 @@ The script builds two years of pretend daily coffee sales for a small shop: a we
 - **Every clue must come from the past.** Shift your lags and rolling averages, or the model peeks at the answer.
 - **Beat your baselines, then look ahead.** Our model beat "yesterday" and "same day last week", then forecast 14 new days one step at a time.
 
+## What's in this folder
+- `forecast.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
