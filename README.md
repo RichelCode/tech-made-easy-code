@@ -47,3 +47,7 @@ Never used a terminal or a virtual environment before? The **[Getting Started gu
 2. **Run the code without changing anything.** Check that your output matches the README.
 3. **Then break it on purpose.** Change one number, run it again and see what moves. That's how the ideas really stick.
 
+## Questions or problems?
+
+If something doesn't run, or you get different numbers, [open an issue](https://github.com/RichelCode/tech-made-easy-code/issues) or leave a comment on the story. Tell me which project, what you ran and the error you saw.
+
