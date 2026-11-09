@@ -33,3 +33,42 @@ pip install -r requirements.txt
 python kmeans.py
 ```
 
+## What you should see
+```
+k   inertia   silhouette
+1     600.0     -
+2     280.8   0.56
+3      47.4   0.77
+4      37.3   0.65
+5      28.5   0.54
+6      25.5   0.51
+7      22.2   0.50
+8      19.5   0.35
+
+Best silhouette score: k = 3
+
+What K-Means found:
+         customers  avg_spend  avg_visits
+cluster
+0              100      608.8        10.0
+1              100     1972.2         3.0
+2              100      447.8         2.0
+
+Scaled:   100% of customers grouped with their real type
+Unscaled: 67% of customers grouped with their real type
+
+What K-Means found WITHOUT scaling:
+   customers  avg_spend  avg_visits
+0        200      528.3         6.0
+1         67     2111.1         3.2
+2         33     1690.3         2.6
+```
+Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's charts are drawn from.
+
+**A note on the random seed:** the data uses seed 42. I also tried seeds 0 to 19. Every one picked k = 3, the scaled version matched 99% to 100% of customers to their real type, and the unscaled version matched between 66% and 83%. So the lesson holds, whatever the seed.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
