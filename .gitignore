@@ -1,0 +1,27 @@
+# Virtual environment (your private sandbox of installed packages)
+venv/
+.venv/
+
+# Python's compiled cache files
+__pycache__/
+*.pyc
+
+# Secrets. Never commit these.
+.env
+*.key
+
+# Large datasets (keep anything over ~50MB out of git)
+# Git can't filter by size on its own, so we ignore common big-data files
+# and folders. If you add a small sample dataset on purpose, use: git add -f
+data/
+*.csv
+*.parquet
+*.zip
+
+# Created when you run a script
+results.json
+
+# Mac and editor clutter
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
