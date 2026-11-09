@@ -24,3 +24,14 @@ The script uses the breast cancer dataset that ships inside scikit-learn (569 tu
 - About two minutes
 - New to Python or the terminal? Follow the [Getting Started guide](../GETTING_STARTED.md) first. It walks you through every step.
 
+## How to run it
+Open a terminal inside this folder, then run these four lines one at a time:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate        # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python boosting.py
+```
+
+**Mac users:** if `import xgboost` fails with a message about `libomp`, install it with `brew install libomp` and try again.
+
