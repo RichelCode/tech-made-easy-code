@@ -14,3 +14,8 @@ The script builds 36 months of pretend ice cream sales from three parts: a trend
 - **Always split by time.** Train on the past, test on the future, never shuffle.
 - **Beat a simple baseline first.** If your model can't beat "same as last month", it isn't ready.
 
+## What's in this folder
+- `forecast.py`: the full code. It runs top to bottom, and numbered comments mark each step from the story.
+- `requirements.txt`: the Python packages the code needs.
+- `results.json`: created when you run the script. It holds the numbers it printed.
+
