@@ -33,3 +33,30 @@ pip install -r requirements.txt
 python pca_explained.py
 ```
 
+## What you should see
+```
+178 wines, 13 measurements each, 3 grape types
+
+Without scaling, component 1 'explains' 99.8% of the variance,
+and it is almost entirely one column: proline
+
+Variance explained after scaling:
+  PC1   36.2%   running total  36.2%
+  PC2   19.2%   running total  55.4%
+  ...
+  PC13   0.8%   running total 100.0%
+
+Accuracy, 5-fold cross-validation:
+  All 13 columns (scaled)           98.3%   (folds: 97% to 100%)
+  2 PCA components (scaled)         95.5%   (folds: 92% to 97%)
+  2 PCA components (NOT scaled)     69.7%   (folds: 61% to 80%)
+```
+Your numbers should match these (or land very close, if you have newer package versions). The script also saves them to `results.json`, which is what the story's charts are drawn from.
+
+**A note on the accuracy numbers:** they are averages over 5 train/test splits (5-fold cross-validation), so no lucky random seed is involved. The scaler and PCA sit inside a pipeline, so they only ever learn from the training slice of each split.
+
+---
+
+⬅️ [Back to all projects](../README.md)
+
+Part of my **Tech Made Easy** series. Richel makes tech easy 💕
